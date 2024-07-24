@@ -23,7 +23,7 @@
     --size10: clamp(8px, 0.78125vw, 10px);
     --size20: clamp(16px, 1.5625vw, 20px);
     --size30: clamp(20px, 2.34375vw, 30px);
-    --size40: clamp(30px, 3.125vw, 40px);
+    --size40: clamp(40px, 3.125vw, 40px);
     --size50: clamp(40px, 3.90625vw, 50px);
     --size60: clamp(50px, 4.6875vw, 60px);
     --size70: clamp(60px, 5.46875vw, 70px);
