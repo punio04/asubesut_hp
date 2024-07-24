@@ -1,0 +1,133 @@
+@import "parts/page.css";
+@import "parts/footer.css";
+
+
+.tabMenu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  border-bottom: var(--black01) 1px solid;
+  width:100%;
+  gap:var(--size40);
+  padding-left:0;
+  padding-inline:1em;
+}
+.tabMenu li {
+  background: var(--gley05);
+  color: var(--white);
+  width:min(41%,428px);
+  padding: var(--size10);
+  border: var(--black01) 1px solid;
+  border-bottom-width: 0;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  font-weight:600;
+}
+.tabMenu li.active {
+  background: var(--blue01);
+}
+.tabContent {
+  display: none;
+  padding-bottom:var(--size90);
+}
+.tabContent.active {
+  display: block;
+}
+.tabMenu li span {
+  display: block;
+  text-align: center;
+}
+
+
+
+/*-------------------------
+ flow
+  -------------------------*/
+
+.box_step {
+  margin-top:var(--size60);
+}
+.box_step .d_flex {
+  gap:var(--size40);
+  padding-inline:var(--size30);
+  align-items: center;
+}
+.box_step figure {
+  width:min(48%,480px);
+}
+.box_step .txt {
+  flex:1;
+}
+
+.btn_contact02 {
+  position:relative;
+  background-color: var(--orange01);
+  color:var(--white);
+  border:1px solid var(--orange01);
+  border-radius: calc(1.08*var(--size60)/2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:var(--size10);
+  padding-inline: var(--size20);
+  height:calc(1.08*var(--size60));
+  text-decoration: none;
+  transition: all .3s var(--easeout);
+  line-height: 1.2;
+}
+.btn_contact02:after {
+  position:relative;
+  content:"";
+  width:48px;
+  height:9px;
+  background: url(../img/arrow.png) no-repeat;
+  background-size: contain;
+  transform: translateX(0);
+  transition: all .3s var(--easeout);
+}
+.btn_contact02:hover {
+  background-color: var(--orange03);
+}
+.btn_contact02:hover:after {
+  transform: translateX(var(--size10));
+}
+.btn_contact02 img {
+  width:var(--size40);
+  height:var(--size30);
+}
+
+
+@media (max-width:1024px) {
+
+}
+@media (max-width:799px)  {
+  .tabMenu {
+    gap:2%;
+    padding-inline:0;
+  }
+  .tabMenu li {
+    width:49%;
+  }
+  .tabMenu li span.fontL {
+    font-size:var(--fsizeS);
+  }
+}
+@media (max-width:499px) {
+  .box_step figure {
+    width:100%;
+  }
+  .tabMenu li {
+    padding:var(--size10) 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabMenu li span.fontL {
+    font-size:var(--fsizeXS);
+  }
+  .tabMenu li span.fontXL {
+    font-size:var(--fsizeM);
+  }
+
+}

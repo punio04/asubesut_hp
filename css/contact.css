@@ -1,0 +1,23 @@
+@import "parts/page.css";
+@import "parts/form.css";
+@import "parts/footer.css";
+
+
+/*-------------------------
+ section01
+  -------------------------*/
+.contact01 {
+  padding-bottom:var(--size100);
+}
+
+@media (max-width:1024px) {
+
+}
+@media (max-width:799px)  {
+
+}
+@media (max-width:499px) {
+  .box_catch .box_img {
+    width:100%;
+}
+}

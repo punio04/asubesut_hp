@@ -1,0 +1,129 @@
+::placeholder {
+    color: var(--gley05);
+  }
+
+input[type="text"],input[type="email"],input[type="tel"],input[type="file"],textarea,.codedropz-upload-container{
+    background-color:#FFF ;
+    border-radius: 9px;
+    box-shadow: inset 0px 0px 9.1px 0.9px rgba(193, 193, 193, 0.69);
+    overflow: hidden; 
+    width:100%;
+    border:none;
+    outline:none;
+    padding:var(--size10);
+    padding-inline: 1em;
+    font-size:var(--fsizeM);
+}
+
+input[type="file"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.codedropz-upload-handler {
+    border:none;
+    margin-top:var(--size10);
+}
+
+form dt span {
+    display:inline-flex;
+    color:var(--white);
+    align-items: center;
+    justify-content: center;
+    padding-inline: 0.5em;
+    margin-inline-start: 0.5em;
+    font-size:var(--fsizeS);
+    width:3em;
+}
+.opt {
+    background-color:var(--gley04); 
+}
+.req {
+    background-color:var(--red01); 
+}
+form dt{
+    padding-bottom: var(--size10);
+}
+form dd{
+    line-height: 1.25;
+}
+.box_submit {
+    justify-content: center;
+    gap:var(--size20);
+    display: flex;
+}
+.btn_submit {
+    border-radius: var(--size30);
+    position:relative;
+    width:min(100%,240px);
+    height:var(--size60);
+    padding:0;
+    display: block;
+    position:relative;
+    cursor: pointer;
+    transition:all .3s var(--easeout);
+}
+.btn_submit:hover {
+    background-color: var(--orange03);
+} 
+.btn_submit input {
+    border:none;
+    background-color: transparent;
+    width:min(100%,240px);
+    height:var(--size60);
+    font-size:var(--sizeL);
+}
+.btn_submit:after {
+    content:"";
+    width:48px;
+    height:9px;
+    background: url(../../img/arrow.png) no-repeat;
+    background-size: contain;
+    display: block;
+    position:absolute;
+    right:var(--size20);
+    z-index: 2;
+    top:calc(50% - 4.5px);
+    transition:all .3s var(--easeout);
+} 
+.btn_submit:hover:after{
+    right:var(--size10);
+}
+
+
+.wrap_entryform table {
+    width:100%;
+}
+.wrap_entryform table td, .wrap_entryform table th {
+    border-bottom:2px solid var(--gley04);
+    padding:var(--size10);
+    text-align: left;
+}
+.wpcf7cp-btns {
+    display: flex;
+    justify-content: center;
+}
+.wpcf7cp-btns button {
+    border-radius: var(--size30);
+    background-color: var(--orange01);
+    position:relative;
+    width:min(100%,240px);
+    height:var(--size60);
+    padding:0;
+    display: block;
+    position:relative;
+    cursor: pointer;
+    transition:all .3s var(--easeout);
+    color:var(--white);
+    font-size:var(--fsizeL);
+    outline:none;
+    border:none;
+
+}
+.wpcf7cp-cfm-edit-btn {
+    background-color: var(--blue01);
+}
+.wpcf7-list-item-label {
+    display: none;
+}
+

@@ -1,0 +1,103 @@
+@import "parts/page.css";
+@import "parts/footer.css";
+
+
+/*-------------------------
+ sectiton01
+  -------------------------*/
+.first01 {
+  padding-bottom:var(--size100);
+}
+.wrapper_message {
+  gap:var(--size40);
+}
+
+.wrapper_message .txt {
+  flex:1;
+}
+.wrapper_message figure {
+  width:min(32%,340px);
+}
+
+@media (max-width:1024px) {
+
+}
+@media (max-width:799px)  {
+  .wrapper_message.d_flex.wrap > figure {
+    width:min(100%,340px);
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width:499px) {
+
+}
+/*-------------------------
+ sectiton02
+  -------------------------*/
+.first02 {
+    padding-bottom:var(--size90);
+  }
+.wrapper_strengthicons {
+  position:relative;
+  justify-content: space-between;
+}
+.wrapper_strengthicons:before {
+  content:"";
+  display: block;
+  width:100%;
+  height:1px;
+  background-color: var(--blue01);
+  position:absolute;
+  left:0;
+  top:50%;
+}
+.wrapper_strengthicons figure {
+  width:min(25%,270px);
+}
+
+.box_strength {
+  gap:var(--size40);
+}
+.box_strength figure {
+  width:min(27%,280px);
+}
+.box_strength .txt {
+  border-left: 2px solid var(--orange01);
+  padding-left:var(--size20);
+  flex:1;
+}
+.box_strength h3 {
+  font-weight:400;
+}
+
+@media (max-width:799px)  {
+  .box_strength.d_flex.wrap > figure {
+    width:min(100%,280px);
+    margin: auto;
+  }
+}
+
+@media (max-width:499px) {
+  .wrapper_strengthicons {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:var(--size40);
+  }
+  .wrapper_strengthicons figure {
+    width:min(100%,270px);
+    position:relative;
+    z-index: 2;
+  }
+  .wrapper_strengthicons:before {
+    content:"";
+    width:1px;
+    height:100%;
+    left:50%;
+    top:0;
+  }
+  .box_strength {
+    justify-content: center;
+  }
+}
